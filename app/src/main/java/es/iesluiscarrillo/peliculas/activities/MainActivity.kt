@@ -1,12 +1,12 @@
-package es.iesluiscarrillo.peliculas
+package es.iesluiscarrillo.peliculas.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import es.iesluiscarrillo.peliculas.FilmProvider
 import es.iesluiscarrillo.peliculas.adapter.FilmAdapter
 import es.iesluiscarrillo.peliculas.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ActivityWithMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
